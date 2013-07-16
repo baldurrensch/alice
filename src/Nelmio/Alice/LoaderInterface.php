@@ -35,4 +35,11 @@ interface LoaderInterface
      * @return array[object]
      */
     public function getReferences();
+
+    /**
+     * Sets the providers to be used for Faker
+     *
+     * @param array $providers
+     */
+    public function setProviders(array $providers);
 }

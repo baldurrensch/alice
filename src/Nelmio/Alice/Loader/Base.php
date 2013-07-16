@@ -202,6 +202,14 @@ class Base implements LoaderInterface
     }
 
     /**
+     * {@inheritDoc}
+     */
+    public function setProviders(array $providers)
+    {
+        $this->providers = $providers;
+    }
+
+    /**
      * Get the generator for this locale
      *
      * @param string $locale the requested locale, defaults to constructor injected default
